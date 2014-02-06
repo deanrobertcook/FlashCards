@@ -1,0 +1,77 @@
+<!-- XSD for German flash card decks -->
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3schools.com" xmlns="http://www.w3schools.com" elementFormDefault="qualified">
+	<!-- DEFINING THE SIMPLEST NON-TEXT SUB-ELEMENTS -->
+	<xs:element name="categories">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="category" type="xs:string" maxOccurs="unbounded"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="prepositions">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="preposition" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="examples">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="example" type="xs:string" maxOccurs="unbounded"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- DEFINING THE DIFFERENT CARD TYPES -->
+	<xs:element name="verb">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="categories" type="categories"/>
+				<xs:element name="infintive" type="text"/>
+				<xs:element name="meaning" type="text"/>
+				<xs:element name="objects" type="text"/>
+				<xs:element name="simple_past" type="text"/>
+				<xs:element name="past_perfect" type="text"/>
+				<xs:element name="prepositions" type="prepositions"/>
+				<xs:element name="examples" type="examples"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="noun">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="categories" type="categories"/>
+				<xs:element name="gender" type="text"/>
+				<xs:element name="noun" type="text"/>
+				<xs:element name="meaning" type="text"/>
+				<xs:element name="examples" type="examples"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="adjective">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="categories" type="categories"/>
+				<xs:element name="adjective" type="text"/>
+				<xs:element name="meaning" type="text"/>
+				<xs:element name="examples" type="examples"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<!-- DEFINING THE ENTIRE DECK -->
+	<xs:element name="deck">
+		<xs:complexType>
+			<xs:all>
+				
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</schema>

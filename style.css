@@ -1,0 +1,138 @@
+@CHARSET "ISO-8859-1";
+
+td, table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #477791;
+}
+
+td, th {
+	padding: 4px;
+}
+
+.exampleColumn {
+	width: 300px;	
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#addWord {
+	display: block;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#AddWord > label {
+	display: block;
+}
+
+.word { 
+	display: block;
+}
+
+.word span{ 
+	padding: 3px;
+}
+
+
+/*
+ * Below are the stylings for the shuffle app
+ */
+
+#shuffleCard {
+	margin-top: 50px;
+	display: block;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 250px;
+	background-color: #477791;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 10px 10px 10px #888888;
+}
+
+/************COMMON STYLING***************/
+#shuffleCard .categoryValue {
+	display: none;
+}
+#shuffleCard .meaningValue {
+	display: block;
+	width: 350px;
+	float: right;
+	font-size: 40px;
+	text-align: right;
+}
+#shuffleCard .exampleValue {
+	display: block;
+	width: 700px;
+	float: left;
+	text-align: center;
+	font-size: 35px;
+	padding: 4px;
+}
+#shuffleCard .infinitiveValue, #shuffleCard .adjectiveValue, #shuffleCard .expressionValue {
+	display: block;
+	width: 349px;
+	float: left;
+	font-size: 40px;
+}
+/************VERB STYLING*****************/
+
+
+
+#shuffleCard .objectValue{
+	display: none;
+}
+#shuffleCard .objectsValue{
+	display: none;
+}
+#shuffleCard .prepositionValue{
+	display: none;
+}
+#shuffleCard .simple_pastValue{
+	display: block;
+	width: 350px;
+	float: left;
+	font-size: 28px;
+}
+#shuffleCard .past_perfectValue{
+	display: block;
+	width: 350px;
+	float: left;
+	clear: left;
+	font-size: 28px;
+}
+
+
+/************NOUN STYLING*****************/
+#shuffleCard .genderValue {
+	display: block;
+	width: 60px;
+	float: left;
+	font-size: 40px;
+}
+#shuffleCard .nounValue {
+	display: block;
+	width: 290px;
+	float: left;
+	font-size: 40px;
+}
+#shuffleCard .pluralValue {
+	display: block;
+	width: 350px;
+	float: left;
+	font-size: 28px;
+}
+
+
+/************ADJECTIVE STYLING*****************/
+
+/************EXPRESSION STYLING*****************/

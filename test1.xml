@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diet_Tracker>
+    <Vegetables>
+        <Item item="Carrot" date="10/8/13" quantity="1"></Item>
+        <Item item="Lettuce" date="10/8/13" quantity="1"></Item>
+        <Item item="Tomatoes" date="10/8/13" quantity="1"></Item>
+    </Vegetables>
+    <Fruit> 
+        <Item item="Apple" date="10/8/13" quantity="1"></Item>
+        <Item item="Banana" date="10/8/13" quantity="1"></Item>
+    </Fruit>
+    <Meat> 
+        <Item item="Steak" date="10/8/13" quantity="1"></Item>
+        
+    </Meat>
+    <Grains> 
+        <Item item="Bread" date="10/8/13" quantity="1"></Item>
+        <Item item="Pasta" date="10/8/13" quantity="1"></Item>
+        <Item item="Rice" date="10/8/13" quantity="1"></Item>
+        
+    </Grains>
+    <Drinks>
+        <Item item="Milk" date="10/8/13" quantity="1"></Item>
+    </Drinks>
+    <Junk> 
+        <Item item="Chips" date="10/8/13" quantity="1"></Item>
+        
+    </Junk>
+</Diet_Tracker>

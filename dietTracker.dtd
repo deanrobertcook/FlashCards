@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT diet_tracker (vegetables?, fruit?, meat?, grains?, drinks?, junk?)>
+<!ELEMENT vegetables (item+)>
+<!ELEMENT fruit (item+)>
+<!ELEMENT meat (item+)>
+<!ELEMENT grains (item+)>
+<!ELEMENT drinks (item+)>
+<!ELEMENT junk (item+)>
+<!ELEMENT item EMPTY>
+<!ATTLIST item
+item CDATA #REQUIRED
+date CDATA #REQUIRED
+quantity CDATA #REQUIRED>
